@@ -15,20 +15,41 @@ main {
   align-items: center;
 }
 
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.page-header__intro {
+  max-width: 30rem;
+  text-align: center;
+  font-size: 17px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 70%;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 3rem;
+  margin: 1rem;
   background-color: #ffffff;
 }
 
 .menu-intro {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .menu-intro p {
+  max-width: 20rem;
 }
 
 .dishes {
@@ -43,26 +64,49 @@ main {
 .description {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
 }
 
 .description p {
-  max-width: 50%;
+  max-width: 45%;
+  font-size: 13px;
 }
 
 .recipes {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .recipe-section {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.recipe-section--reverse {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
 .recipe-section__img {
-  max-width: 50%;
+  max-width: 45%;
 }
 
-h1,
-h2 {
-  font-family: 'Playfair Display', serif;
+.recipe-section__text {
+  max-width: 45%;
+}
+
+.recipe-section__button {
+  background-color: #ffefef;
+  padding: 1rem;
+  border: none;
+}
+
+footer {
+  max-width: 30rem;
+  text-align: center;
+  font-size: 13px;
 }
