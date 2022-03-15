@@ -17,7 +17,29 @@ main {
 
 .menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  padding: 2rem;
   background-color: #ffffff;
+}
+
+.dishes {
+  display: flex;
+  justify-content: center;
+}
+
+.dish {
+  max-width: 30%;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description p {
+  max-width: 50%;
 }
 
 h1,
